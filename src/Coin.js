@@ -9,11 +9,11 @@ const Coin = ({image, name, symbol, price, volume, priceChange, marketcap }) => 
                     <img src={image} alt="crypto"/>
                 </div>
                 <div className="coin-column2">
-                    <h1>{name}</h1>
+                    <h1 className="coin-name" >{name}</h1>
                     <p className="coin-price">${price.toLocaleString()}</p>
                 </div>
                 <div className="coin-column3">
-                    <p className="coin-symbol">{symbol}</p>
+                    <p className="coin-symbol">{symbol.toUpperCase()}</p>
                     {priceChange < 0 ? (
                             <p className="coin-percent red">{priceChange.toFixed(2)}%</p>
                         ) : (
