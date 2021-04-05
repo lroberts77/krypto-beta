@@ -12,10 +12,12 @@ function App() {
     fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
     .then(res => {
       res.json()
-      .then(data => setCoins(data))
+      .then(data => setCoins(data.slice(0, 20)))
     })
     .catch(error => console.log(error));
     }, []);
+
+    console.log(coins);
 
     const handleChange = (e) => {
       setSearch(e.target.value)
@@ -26,7 +28,12 @@ function App() {
     );
 
   return (
+
     <div className="coin-app">
+      <div className="circles">
+        <div className="circle circle-1"></div>
+        <div className="circle circle-2"></div>
+      </div>
       <div className="coin-search">
         <h1 className="coin-text">Search a currency</h1>
         <form>

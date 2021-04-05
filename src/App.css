@@ -1,7 +1,46 @@
+html, body {
+  overflow-x: hidden;
+}
+
+
 body {
-  background-color: rgb(245, 245, 245);
+  /* background: rgb(131,58,180);
+  background: linear-gradient(119deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 33%, rgba(252,212,69,1) 100%); */
+  /* background: rgb(120,197,252);
+  background: linear-gradient(119deg, rgba(120,197,252,1) 0%, rgba(121,94,215,1) 33%, rgba(193,69,252,1) 100%); */
+  background: linear-gradient(to right, #283593, #1976d2);
   box-sizing: border-box;
+  position: relative;
   margin: 0;
   padding: 0px 10px;
+  /* overflow-x: hidden; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+}
+.circles {
+  position: absolute;
+  height: 270px;
+  width: 450px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-1 {
+  height: 180px;
+  width: 180px;
+  top: -50px;
+  left: -60px;
+}
+.circle-2 {
+  height: 200px;
+  width: 200px;
+  bottom: -90px;
+  right: -90px;
+  opacity: 0.8;
 }
