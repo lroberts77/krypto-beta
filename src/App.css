@@ -13,7 +13,6 @@ body {
   position: relative;
   margin: 0;
   padding: 0px 10px;
-  /* overflow-x: hidden; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
 }
@@ -61,4 +60,11 @@ body {
   bottom: -850px;
   right: -90px;
   opacity: 0.8;
+}
+
+.circle-5 {
+  height: 180px;
+  width: 180px;
+  top: 1320px;
+  left: -60px;
 }
