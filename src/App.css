@@ -44,3 +44,17 @@ body {
   right: -90px;
   opacity: 0.8;
 }
+
+.circle-3 {
+  height: 180px;
+  width: 180px;
+  top: 550px;
+  left: -60px;
+}
+.circle-4 {
+  height: 200px;
+  width: 200px;
+  bottom: -850px;
+  right: -90px;
+  opacity: 0.8;
+}

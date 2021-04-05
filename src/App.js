@@ -33,6 +33,8 @@ function App() {
       <div className="circles">
         <div className="circle circle-1"></div>
         <div className="circle circle-2"></div>
+        <div className="circle circle-3"></div>
+        <div className="circle circle-4"></div>
       </div>
       <div className="coin-search">
         <h1 className="coin-text">Search a currency</h1>
