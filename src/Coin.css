@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     /* border-radius: 7px; */
     /* box-shadow: 0 12px 25px rgba(0,0,0,0.25), 0 8px 8px rgba(0,0,0,0.22); */
-    background: rgba( 255, 255, 255, 0.40 );
+    background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 15.5px );
     -webkit-backdrop-filter: blur( 15.5px );
@@ -73,7 +73,6 @@ img {
     font-size: 18px;
     border-top: rgb(50, 50, 50) 1px solid;
     border-bottom: rgb(50, 50, 50) 1px solid;
-    -webkit-text-stroke: 0.5px black;
     top: -8px;
     position: relative;
 }
@@ -85,9 +84,11 @@ img {
 }
 
 .red {
+    -webkit-text-stroke: 0.4px black;
     color: #f00606;
 }
 
 .green {
+    -webkit-text-stroke: 0.4px white;
     color: #11d811;
 }
