@@ -18,6 +18,10 @@ body {
   
 }
 
+.coin-text {
+  color: white;
+}
+
 .circle {
   position: absolute;
   border-radius: 50%;
