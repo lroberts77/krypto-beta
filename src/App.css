@@ -1,5 +1,6 @@
 html, body {
   overflow-x: hidden;
+  height: 100vh
 }
 
 
@@ -15,6 +16,11 @@ body {
   padding: 0px 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
+}
+
+.coin-search {
+  text-align: center;
+  z-index: 10;
 }
 
 .coin-text {
@@ -35,36 +41,41 @@ body {
   transform: translate(-50%, -50%);
 }
 .circle-1 {
+  position: absolute;
   height: 180px;
   width: 180px;
-  top: -50px;
+  top: 250px;
   left: -60px;
 }
 .circle-2 {
+  position: absolute;
   height: 200px;
   width: 200px;
-  bottom: -90px;
+  top: 450px;
   right: -90px;
   opacity: 0.8;
 }
 
 .circle-3 {
+  position: absolute;
   height: 180px;
   width: 180px;
-  top: 550px;
+  top: 850px;
   left: -60px;
 }
 .circle-4 {
+  position: absolute;
   height: 200px;
   width: 200px;
-  bottom: -850px;
+  top: 1050px;
   right: -90px;
   opacity: 0.8;
 }
 
 .circle-5 {
+  position: absolute;
   height: 180px;
   width: 180px;
-  top: 1320px;
+  top: 1490px;
   left: -60px;
 }
