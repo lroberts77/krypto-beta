@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Coin from './Coin';
-// import axios from 'axios';
+import { TextField } from '@material-ui/core';
+import useStyles from './styles';
 
 function App() {
 
+  const classes = useStyles();
   const [coins, setCoins] = useState([])
   const [search, setSearch] = useState('')
 
@@ -39,8 +41,15 @@ function App() {
       </div>
       <div className="coin-search">
         <h1 className="coin-text">Search a currency</h1>
-        <form>
-          <input type="text" placeholder="Search..." onChange={handleChange} className="coin-input"/>
+        <form >
+        <TextField className={classes.text}
+        name="Search..." 
+                variant={'outlined'} 
+                label="Search"
+                size="small"
+                onChange={handleChange}
+                />
+          {/* <input type="text" placeholder="Search..." onChange={handleChange} className="coin-input"/> */}
         </form>
       </div>
         {filteredCoins.map(coin => {

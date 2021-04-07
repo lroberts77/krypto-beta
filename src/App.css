@@ -1,21 +1,34 @@
 html, body {
   overflow-x: hidden;
-  height: 100vh
 }
 
-
 body {
-  /* background: rgb(131,58,180);
-  background: linear-gradient(119deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 33%, rgba(252,212,69,1) 100%); */
-  /* background: rgb(120,197,252);
-  background: linear-gradient(119deg, rgba(120,197,252,1) 0%, rgba(121,94,215,1) 33%, rgba(193,69,252,1) 100%); */
-  background: linear-gradient(to right, #283593, #1976d2);
+  background-image: url(./assets/circles-bg.jpg);
+  /* background: linear-gradient(to right, #283593, #1976d2); */
   box-sizing: border-box;
   position: relative;
   margin: 0;
   padding: 0px 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+  /* height: 100vh; */
+}
+
+/* .MuiOutlinedInput-root{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 15.5px );
+-webkit-backdrop-filter: blur( 15.5px );
+} */
+
+
+.MuiFormLabel-root.Mui-focused,
+.MuiOutlinedInput-inputMarginDense,
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  color: white !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
 }
 
 .coin-search {
@@ -27,55 +40,7 @@ body {
   color: white;
 }
 
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(#006db3, #29b6f6);
-}
-.circles {
-  position: absolute;
-  height: 270px;
-  width: 450px;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.circle-1 {
-  position: absolute;
-  height: 180px;
-  width: 180px;
-  top: 250px;
-  left: -60px;
-}
-.circle-2 {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  top: 450px;
-  right: -90px;
-  opacity: 0.8;
-}
-
-.circle-3 {
-  position: absolute;
-  height: 180px;
-  width: 180px;
-  top: 850px;
-  left: -60px;
-}
-.circle-4 {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  top: 1050px;
-  right: -90px;
-  opacity: 0.8;
-}
-
-.circle-5 {
-  position: absolute;
-  height: 180px;
-  width: 180px;
-  top: 1490px;
-  left: -60px;
+.coin-input {
+  height: 20px;
+  border-radius: 5px;
 }
