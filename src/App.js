@@ -4,7 +4,7 @@ import Coin from './Coin';
 import { TextField } from '@material-ui/core';
 import useStyles from './styles';
 
-function App() {
+export default function App() {
 
   const classes = useStyles();
   const [coins, setCoins] = useState([])
@@ -64,5 +64,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
