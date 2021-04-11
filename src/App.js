@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Coin from './Coin';
 import { TextField } from '@material-ui/core';
-import useStyles from './styles';
+import useStyles from './Appstyles';
 
 export default function App() {
 
