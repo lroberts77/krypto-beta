@@ -10,6 +10,7 @@ function App() {
   const [coins, setCoins] = useState([])
   const [search, setSearch] = useState('')
 
+  // on page load fetch data ffrom api, limited to 20
   useEffect(() => {
     fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
     .then(res => {
@@ -21,10 +22,12 @@ function App() {
 
     console.log(coins);
 
+    // set the value of the search box to setsearch in turn search
     const handleChange = (e) => {
       setSearch(e.target.value)
     }
 
+    // function to filter coins to coins that include search value
     const filteredCoins = coins.filter(coin =>
       coin.name.toLowerCase().includes(search.toLowerCase())
     );
@@ -32,13 +35,6 @@ function App() {
   return (
 
     <div className="coin-app">
-      <div className="circles">
-        <div className="circle circle-1"></div>
-        <div className="circle circle-2"></div>
-        <div className="circle circle-3"></div>
-        <div className="circle circle-4"></div>
-        <div className="circle circle-5"></div>
-      </div>
       <div className="coin-search">
         <h1 className="coin-text">Search a currency</h1>
         <form >
@@ -49,7 +45,6 @@ function App() {
                 size="small"
                 onChange={handleChange}
                 />
-          {/* <input type="text" placeholder="Search..." onChange={handleChange} className="coin-input"/> */}
         </form>
       </div>
         {filteredCoins.map(coin => {
