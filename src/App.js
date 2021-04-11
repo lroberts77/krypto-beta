@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Coin from './Coin';
-import { TextField } from '@material-ui/core';
+import { TextField, Grid, Grow, Container } from '@material-ui/core';
 import useStyles from './Appstyles';
 
 export default function App() {
@@ -47,8 +47,13 @@ export default function App() {
                 />
         </form>
       </div>
+      <Container className={classes.grid} item xs={12} sm={6} xl={6}>
         {filteredCoins.map(coin => {
           return (
+
+            // <Grow in>
+            // <Grid display="flex" flex-direction="row">
+
             <Coin 
               key={coin.id} 
               name={coin.name} 
@@ -59,8 +64,13 @@ export default function App() {
               priceChange={coin.price_change_percentage_24h}
               marketcap={coin.total_volume}
             />
+            // </Grid>
+            // </Grow>
+
           );
+          
         })}
+      </Container>  
     </div>
   );
 }

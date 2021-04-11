@@ -1,8 +1,10 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
 import './Coin.css';
 
 const Coin = ({image, name, symbol, price, volume, priceChange, marketcap }) => {
     return (
+        <Grid display="flex" flex-wrap="wrap" item xs={12} sm={6} lg={3}>
         <div className="coin-cointainer">
             <div className="coin-row1">
                 <div className="coin-column1">
@@ -28,6 +30,7 @@ const Coin = ({image, name, symbol, price, volume, priceChange, marketcap }) => 
                 </p>
             </div>
         </div>
+        </Grid>
     )
 }
 
