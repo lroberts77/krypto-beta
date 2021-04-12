@@ -46,7 +46,7 @@ export default function App() {
                 />
         </form>
       </div>
-      <Container className={classes.grid} item xs={12} sm={6} lg={6} xl={6}>
+      <Container className={classes.grid} xs={12} sm={6} lg={6} xl={6}>
         {filteredCoins.map(coin => {
           return (
             <Coin
