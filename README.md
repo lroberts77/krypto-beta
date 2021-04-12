@@ -17,6 +17,7 @@
 * [Improvemets](#Improvements)
 
 ## <a name="Project">Project Direction</a>
+I created this app to merge my two interests of coding and crypto trading. This allows you to quickly check the movements of your cryptocurrencies and I'm adding the functionality to click on a cryptocurrency card and get a graph showing the price movement over a given period and more detailed information about the crytpocurrency. I learned alot during the course of making this app including using Material-UI for repsonsive styling, API usage and passing props from one component to another.
 
 ## <a name="Install">Installation</a>
 The deployed live app is [HERE](https://krypto-beta.netlify.app/)
