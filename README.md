@@ -34,7 +34,7 @@ $ npm install
 ```shell
 $ npm start
 ```
-If a tab doesn't open with the Krypto-beta app running, open a new tab and type in http://localhost:3000 in the url bar and press enter. After the page has loaded scroll up and down to view the top 32 crytocurrencies. If you want to search for a currency type in the search box and it will filter the currencies to the value of the search box.
+If a tab doesn't open with the Krypto-beta app running, open a new tab and type in localhost:3000 in the url bar and press enter. After the page has loaded scroll up and down to view the top 32 crytocurrencies. If you want to search for a currency type in the search box and it will filter the currencies to the value of the search box.
 
 ## <a name="Improvements">Improvements</a>
 * Experiment more with styling
