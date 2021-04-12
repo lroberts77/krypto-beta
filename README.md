@@ -1,6 +1,6 @@
 # Krypt
 
-### [LIVE APP](https://https://krypto-beta.netlify.app/)
+### [LIVE APP](https://krypto-beta.netlify.app/)
 
 <div>
 <img src="https://img.shields.io/badge/made%20with-React-green.svg?logo=react&colorA=000000&colorB=be33ff" alt="made with React" />
