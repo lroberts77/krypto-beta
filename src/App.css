@@ -45,3 +45,14 @@ body {
   height: 20px;
   border-radius: 5px;
 }
+
+@media screen and (min-width: 1270px) {
+  /* .MuiGrid-grid-lg-3, .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 50% !important;
+    flex-basis: 50% !important;
+  } */
+  .MuiContainer-root {
+    padding: 0 !important;
+  }
+}
