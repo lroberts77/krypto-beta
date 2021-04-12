@@ -9,13 +9,11 @@ html, body {
 
 body {
   background-image: url(./assets/circles-bg.jpg);
-  /* background: linear-gradient(to right, #283593, #1976d2); */
   box-sizing: border-box;
   position: relative;
   margin: 0;
   padding: 0px 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* height: 100vh; */
 }
 
 .MuiContainer-root {
