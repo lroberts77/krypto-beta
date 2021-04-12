@@ -1,4 +1,4 @@
-# Krypt
+# Krypto
 
 ### [LIVE APP](https://krypto-beta.netlify.app/)
 
@@ -17,6 +17,16 @@
 * [Improvemets](#Improvements)
 
 ## <a name="Project">Project Direction</a>
+
+## <a name="Install">Installation</a>
+The deployed live app is [HERE](https://krypto-beta.netlify.app/)
+
+* Or to clone the repo
+```shell
+$ git clone git@github.com:lroberts77/krypto-beta.git
+$ cd Krypt
+$ npm install
+```
 
 ## <a name="Improvements">Improvements</a>
 * Experiment more with styling
