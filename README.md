@@ -17,3 +17,7 @@
 * [Improvemets](#Improvements)
 
 ## <a name="Project">Project Direction</a>
+
+## <a name="Improvements">Improvements</a>
+* Experiment more with styling
+* 24 hour graph with more information about crypto when card is clicked
