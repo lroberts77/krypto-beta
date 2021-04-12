@@ -9,3 +9,11 @@
 </div>
 
 ### Technologies: React, Node.js, JavaScript, HTML, CSS, Material-UI, CoinGeko API
+
+## Index
+* [Project Direction](#Project)
+* [Installation](#Install)
+* [Usage](#Usage)
+* [Improvemets](#Improvements)
+
+## <a name="Project">Project Direction</a>
