@@ -33,6 +33,7 @@ body {
 
 .coin-text {
   color: white;
+  font-family: 'Cinzel', serif;
 }
 
 .coin-input {
@@ -41,11 +42,11 @@ body {
 }
 
 @media screen and (min-width: 1270px) {
-  /* .MuiGrid-grid-lg-3, .MuiGrid-grid-xl-3 {
+  .MuiGrid-grid-lg-3, .MuiGrid-grid-xl-3 {
     flex-grow: 0;
-    max-width: 50% !important;
-    flex-basis: 50% !important;
-  } */
+    max-width: 33% !important;
+    flex-basis: 33% !important;
+  }
   .MuiContainer-root {
     padding: 0 !important;
   }

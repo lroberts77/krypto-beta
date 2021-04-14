@@ -51,6 +51,7 @@ img {
 .coin-name {
     margin: inherit;
     top: 15px;
+    font-weight: 100;
     position: relative;
     font-size: 30px;
     text-align: center;
@@ -59,6 +60,7 @@ img {
 .coin-price {
     position: relative;
     font-size: 26px;
+    font-weight: 100;
     margin: inherit;
     margin-top: 15px;
     text-align: center;
@@ -70,10 +72,10 @@ img {
 }
 
 .coin-percent {
-    font-size: 18px;
+    font-size: 20px;
     border-top: rgb(50, 50, 50) 1px solid;
     border-bottom: rgb(50, 50, 50) 1px solid;
-    top: -8px;
+    top: -12px;
     position: relative;
 }
 
@@ -84,11 +86,11 @@ img {
 }
 
 .red {
-    -webkit-text-stroke: 0.4px black;
+    -webkit-text-stroke: 0.5px black;
     color: #f00606;
 }
 
 .green {
-    -webkit-text-stroke: 0.4px white;
+    -webkit-text-stroke: 0.6px black;
     color: #11d811;
 }
