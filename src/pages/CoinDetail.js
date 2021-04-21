@@ -53,6 +53,9 @@ const CoinDetail = () => {
     }, [id]);
 
     const renderData = () => {
+        if(isLoading) {
+            return <div>Loading...</div>
+        }
         return (
             <div className="coinlist">
                 <HistoryChart />
