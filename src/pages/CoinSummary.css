@@ -1,0 +1,35 @@
+.MuiFormLabel-root.Mui-focused,
+.MuiOutlinedInput-inputMarginDense,
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  color: white !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.coin-search {
+  text-align: center;
+  z-index: 10;
+}
+
+.coin-text {
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+.coin-input {
+  height: 20px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1270px) {
+  .MuiGrid-grid-lg-3, .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 33% !important;
+    flex-basis: 33% !important;
+  }
+  .MuiContainer-root {
+    padding: 0 !important;
+  }
+}
