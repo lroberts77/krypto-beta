@@ -6,39 +6,50 @@ import api from "../api/geckoApi";
 
 const CoinDetail = () => {
 
-    
     const { id } = useParams();
     console.log(id);
     const [coinData, setCoinData] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         const fetchData = async () => {
-        const resultsDay = await api.get(`/coins/${id.toLowerCase()}/market_chart/` , {
-            params: {
-                vs_currency: "usd",
-                days: "1",
-            },
-        });
-        const resultsWeek = await api.get(`/coins/${id.toLowerCase()}/market_chart/` , {
-            params: {
-                vs_currency: "usd",
-                days: "7",
-            },
-        });
-        const resultsYear = await api.get(`/coins/${id.toLowerCase()}/market_chart/` , {
-            params: {
-                vs_currency: "usd",
-                days: "365",
-            },
-        });
-        console.log(resultsDay.data);
-        setCoinData({
-            day: resultsDay.data.prices,
-            week: resultsWeek.data.prices,
-            year: resultsYear.data.prices
-        })
+            setIsLoading(true);
+            const [day, week, year, detail] = await Promise.all([
+                api.get(`/coins/${id.toLowerCase()}/market_chart/` , {
+                    params: {
+                        vs_currency: "usd",
+                        days: "1",
+                    },
+                }).catch(error => console.log(error)),
+                api.get(`/coins/${id.toLowerCase()}/market_chart/` , {
+                    params: {
+                        vs_currency: "usd",
+                        days: "7",
+                    },
+                }).catch(error => console.log(error)),
+                api.get(`/coins/${id.toLowerCase()}/market_chart/` , {
+                    params: {
+                        vs_currency: "usd",
+                        days: "365",
+                    },
+                }).catch(error => console.log(error)),
+                api.get("/coins/markets/", {
+                    params: {
+                      vs_currency: "usd",
+                      ids: id.toLowerCase(),
+                    },
+                }).catch(error => console.log(error)),
+            ])
+            console.log(detail.data);
+            setCoinData({
+                day: day.data.prices,
+                week: week.data.prices,
+                year: year.data.prices,
+                detail: detail.data[0]
+            })
+            setIsLoading(false);
         };
-        fetchData()
+            fetchData()
     }, [id]);
 
     const renderData = () => {
