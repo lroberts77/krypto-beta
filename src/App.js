@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Coin from './Coin';
+import Coin from './pages/CoinList';
 import { TextField, Container } from '@material-ui/core';
 import useStyles from './Appstyles';
+import api from "../src/api/geckoApi"
 
 export default function App() {
 
@@ -10,15 +11,24 @@ export default function App() {
   const [coins, setCoins] = useState([])
   const [search, setSearch] = useState('')
 
-  // on page load fetch data from api and set response to coins, limited to 20
+  // on page load, fetch data from api and set response to coins, limited to 32
   useEffect(() => {
-    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
-    .then(res => {
-      res.json()
-      .then(data => setCoins(data.slice(0, 32)))
+    const fetchData = async () => {
+      const res = await api.get("/coins/markets/", {
+        params: {
+          vs_currency: "usd",
+        },
     })
     .catch(error => console.log(error));
+    setCoins(res.data.slice(0, 32));
+    }
+    fetchData()
     }, []);
+
+    // fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
+    // .then(res => {
+    //   res.json()
+    //   .then(data => setCoins(data.slice(0, 32)))
 
     console.log(coins);
 
