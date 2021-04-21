@@ -44,15 +44,17 @@ const CoinSummary = () => {
 
   return (
     <>
-        <form className="search-form">
-            <TextField className={classes.text}
-                name="Search..." 
-                variant={'outlined'} 
-                label="Search"
-                size="small"
-                onChange={handleChange}
-            />
-        </form>
+        <div className="search-form">
+            <form>
+                <TextField className={classes.text}
+                    name="Search..." 
+                    variant={'outlined'} 
+                    label="Search"
+                    size="small"
+                    onChange={handleChange}
+                />
+            </form>
+        </div>
         <Container className={classes.grid} xs={12} sm={6} lg={6} xl={6}>
             {filteredCoins.map(coin => {
                 return (

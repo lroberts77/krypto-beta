@@ -23,6 +23,10 @@
   border-radius: 5px;
 }
 
+.search-form {
+    text-align: center;
+}
+
 @media screen and (min-width: 1270px) {
   .MuiGrid-grid-lg-3, .MuiGrid-grid-xl-3 {
     flex-grow: 0;
