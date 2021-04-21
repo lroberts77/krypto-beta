@@ -9,6 +9,7 @@ const CoinDetail = () => {
     
     const { id } = useParams();
     console.log(id);
+    const [coinData, setCoinData] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
