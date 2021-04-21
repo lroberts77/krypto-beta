@@ -6,7 +6,7 @@ import './CoinList.css';
 const Coin = ({image, name, symbol, price, volume, priceChange, marketcap }) => {
     return (
         <Grid display="flex" flex-wrap="wrap" item xs={12} sm={6} lg={3}>
-        <Link to={`/coins/${name}`} className="">
+        <Link to={`/coins/${name}`} className="detail-link" >
         <div className="coin-cointainer">
             <div className="coin-row1">
                 <div className="coin-column1">

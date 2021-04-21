@@ -44,7 +44,7 @@ const CoinSummary = () => {
 
   return (
     <>
-        <form >
+        <form className="search-form">
             <TextField className={classes.text}
                 name="Search..." 
                 variant={'outlined'} 

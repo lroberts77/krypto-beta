@@ -94,3 +94,7 @@ img {
     -webkit-text-stroke: 0.6px black;
     color: #11d811;
 }
+
+.detail-link {
+    text-decoration: none;
+}
