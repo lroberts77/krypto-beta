@@ -25,10 +25,17 @@ const CoinDetail = () => {
                 days: "7",
             },
         });
+        const resultsYear = await api.get(`/coins/${id.toLowerCase()}/market_chart/` , {
+            params: {
+                vs_currency: "usd",
+                days: "365",
+            },
+        });
         console.log(resultsDay.data);
         setCoinData({
             day: resultsDay.data.prices,
-            week: resultsWeek.data.prices
+            week: resultsWeek.data.prices,
+            year: resultsYear.data.prices
         })
         };
         fetchData()
