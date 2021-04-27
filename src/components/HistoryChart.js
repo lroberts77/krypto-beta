@@ -19,7 +19,9 @@ const HistoryChart = () => {
                         { x: 2, y: 12},
                         { x: 3, y: 25},
                         ],
-                        borderWidth: 1
+                        backgroundColor: "rgba(174, 305, 194, 0.5",
+                        borderColor: "rgba(174, 305, 194, 0.3)",
+                        pointRadius: 0,
                     }]
                 },
                 options: ChartOptions 
