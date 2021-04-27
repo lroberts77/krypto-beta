@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import Chartjs from 'chart.js/auto';
+import { ChartOptions } from '../ChartConfig.js/ChartConfig';
 
 
 const HistoryChart = () => {
@@ -21,13 +22,7 @@ const HistoryChart = () => {
                         borderWidth: 1
                     }]
                 },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                }
+                options: ChartOptions 
             });
         }
     })
