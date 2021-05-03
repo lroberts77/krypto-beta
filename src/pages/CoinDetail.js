@@ -14,7 +14,7 @@ const CoinDetail = () => {
     const formatData = data => {
         return data.map(el => {
             return {
-                t: el[0],
+                x: el[0],
                 y: el[1].toFixed(2),
             };
         });
@@ -67,8 +67,8 @@ const CoinDetail = () => {
         }
         return (
             <div className="coinlist">
-                <HistoryChart />
-                <CoinData />
+                <HistoryChart data={coinData}/>
+                <CoinData data={CoinData.detail}/>
             </div>
         );
     };
