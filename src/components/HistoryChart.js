@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import Chartjs from 'chart.js/auto';
 import { ChartOptions } from '../ChartConfig/ChartConfig';
+import './HistoryChart.css'
 
 const HistoryChart = ({ data }) => {
 
@@ -14,7 +15,7 @@ const HistoryChart = ({ data }) => {
                 data: {
                     labels: week,
                     datasets: [{
-                        data: week,
+                        data: data.week,
                         backgroundColor: "rgba(174, 305, 194, 0.5",
                         borderColor: "rgba(174, 305, 194, 0.3)",
                         pointRadius: 0,

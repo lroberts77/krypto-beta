@@ -1,0 +1,8 @@
+body {
+    margin: 10px 20px 0px 20px;
+}
+
+.chart-container {
+    position: relative;
+    background-color: rgba( 255, 255, 255, 0.25 );
+}
