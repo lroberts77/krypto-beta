@@ -9,6 +9,7 @@ const CoinData = ({ data }) => {
               <span>Total Supply{data.total_supply}</span>
               <span>Total Volume{data.total_volume}</span>
               <span>24hr High{data.high_24h}</span>
+              <span>24hr Low{data.low_24h}</span>
         </div>
     )
 }
