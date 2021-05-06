@@ -6,6 +6,7 @@ const CoinData = ({ data }) => {
     return (
         <div>
               <span>Market Cap{data.market_cap}</span>
+              <span>Total Supply{data.total_supply}</span>
         </div>
     )
 }
