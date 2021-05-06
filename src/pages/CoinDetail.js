@@ -7,7 +7,7 @@ import api from "../api/geckoApi";
 const CoinDetail = () => {
 
     const { id } = useParams();
-    console.log(id);
+    // console.log(id);
     const [coinData, setCoinData] = useState([])
     const [isLoading, setIsLoading] = useState(false)
 
@@ -16,6 +16,14 @@ const CoinDetail = () => {
             return {
                 x: el[0],
                 y: el[1].toFixed(2),
+            };
+        });
+    };
+
+    const formattime = data => {
+        return data.map(el => {
+            return {
+                x: el[0],
             };
         });
     };
@@ -49,9 +57,10 @@ const CoinDetail = () => {
                     },
                 }).catch(error => console.log(error)),
             ])
-            console.log(detail.data);
+            console.log(day);
             setCoinData({
                 day: formatData(day.data.prices),
+                daytime: formattime(day.data.prices),
                 week: formatData(week.data.prices),
                 year: formatData(year.data.prices),
                 detail: detail.data[0]

@@ -6,16 +6,18 @@ import './HistoryChart.css'
 const HistoryChart = ({ data }) => {
 
     const chartRef = useRef()
-    const { day, week, year, detail } = data;
-    console.log(week);
+    const { day, daytime, week, year, detail } = data;
+    console.log(data.daytime);
+    console.log(data.day);
+
     useEffect(() => {
         if(chartRef && chartRef.current) {
             const chartInstance = new Chartjs(chartRef.current, {
                 type: 'line',
                 data: {
-                    labels: week,
+                    labels: day,
                     datasets: [{
-                        data: data.week,
+                        data: day,
                         backgroundColor: "rgba(174, 305, 194, 0.5",
                         borderColor: "rgba(174, 305, 194, 0.3)",
                         pointRadius: 0,

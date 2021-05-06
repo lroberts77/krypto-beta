@@ -1,7 +1,8 @@
-const CoinData = () => {
+import React from 'react';
+
+const CoinData = ({ data }) => {
     return (
         <div>
-            
         </div>
     )
 }
