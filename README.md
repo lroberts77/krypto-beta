@@ -8,7 +8,7 @@
 <img src="https://api.netlify.com/api/v1/badges/9b481107-bc31-4bb9-8b4e-f4dc63f62ade/deploy-status" alt="netlify success" />
 </div>
 
-### Technologies: React, Node.js, JavaScript, CoinGeko API, HTML, CSS, Material-UI
+### Technologies: React, Node.js, JavaScript, CoinGeko API, Chart JS, HTML, CSS, Material-UI
 
 ## Index
 * [Project Direction](#Project)
