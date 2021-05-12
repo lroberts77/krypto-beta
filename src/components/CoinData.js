@@ -1,10 +1,11 @@
 import React from "react";
+import "./CoinData.css"
 
 const CoinData = ({ data }) => {
   const renderData = () => {
     if (data) {
       return (
-        <div>
+        <div className="data-container">
         <span>Market Cap{data.market_cap}</span>
         <span>Total Supply{data.total_supply}</span>
         <span>Total Volume{data.total_volume}</span>
