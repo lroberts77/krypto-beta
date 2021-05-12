@@ -1,5 +1,6 @@
 .data-container {
     position: relative;
+    display: flex;
     width: 95%;
     margin: 25px auto 0 auto;
     height: 200px;
@@ -10,4 +11,11 @@
     -webkit-backdrop-filter: blur( 15.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: calc(100% - 10px);
 }
