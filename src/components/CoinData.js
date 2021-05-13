@@ -7,16 +7,18 @@ const CoinData = ({ data }) => {
       return (
         <div className="data-container">
             <div className="column">
-                <span>Market Cap{data.market_cap}</span>
-                <span>Total Supply{data.total_supply}</span>
+                <div>Market Cap</div>
+                <div>{data.market_cap}</div>
+                <div>Total Supply</div>
+                <div>{data.total_supply}</div>
             </div>
             <div className="column">
-                <span>Total Volume{data.total_volume}</span>
-                <span>24hr High{data.high_24h}</span>
+                <div>Total Volume{data.total_volume}</div>
+                <div>24hr High{data.high_24h}</div>
             </div>
             <div className="column">
-                <span>24hr Low{data.low_24h}</span>
-                <span>Circulating Supply{data.circulating_supply}</span>
+                <div>24hr Low{data.low_24h}</div>
+                <div>Circulating Supply{data.circulating_supply}</div>
             </div>
         </div>
       );
