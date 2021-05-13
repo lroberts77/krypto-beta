@@ -24,4 +24,10 @@
 
 .row {
     height: 100%;
+    padding-top: 10px;
+}
+
+.detail-title {
+    opacity: 0.4;
+    padding-bottom: 5px;
 }
