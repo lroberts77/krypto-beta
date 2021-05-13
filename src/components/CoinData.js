@@ -19,8 +19,10 @@ const CoinData = ({ data }) => {
                 <div>{data.high_24h}</div>
             </div>
             <div className="column">
-                <div>24hr Low{data.low_24h}</div>
-                <div>Circulating Supply{data.circulating_supply}</div>
+                <div>24hr Low</div>
+                <div>{data.low_24h}</div>
+                <div>Circulating Supply</div>
+                <div>{data.circulating_supply}</div>
             </div>
         </div>
       );
