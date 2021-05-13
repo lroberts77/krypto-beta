@@ -32,7 +32,7 @@ const HistoryChart = ({ data }) => {
     return (
         <div className="chart-container">
             <div>
-                <canvas ref={chartRef} id="canvas" width={250} height={250}></canvas>
+                <canvas ref={chartRef} id="canvas" width={250} height={450}></canvas>
             </div>
         </div>
     )
