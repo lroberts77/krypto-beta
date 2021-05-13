@@ -29,11 +29,11 @@ const CoinData = ({ data }) => {
             <div className="column">
                 <div className="row"> 
                     <div className="detail-title">24hr High</div>
-                    <div>${data.high_24h}</div>
+                    <div>${data.high_24h.toLocaleString()}</div>
                 </div>
                 <div className="row"> 
                     <div className="detail-title">24hr Low</div>
-                    <div>${data.low_24h}</div>
+                    <div>${data.low_24h.toLocaleString()}</div>
                 </div>
             </div>
         </div>

@@ -7,15 +7,13 @@ const HistoryChart = ({ data }) => {
 
     const chartRef = useRef()
     const { day, daytime, week, year, detail } = data;
-    console.log(data.daytime);
-    console.log(data.day);
 
     useEffect(() => {
         if(chartRef && chartRef.current) {
             const chartInstance = new Chartjs(chartRef.current, {
                 type: 'line',
                 data: {
-                    labels: day,
+                    labels: daytime,
                     datasets: [{
                         data: day,
                         backgroundColor: "rgba(174, 305, 194, 0.5",
@@ -29,6 +27,10 @@ const HistoryChart = ({ data }) => {
             });
         }
     })
+
+    console.log(daytime);
+    console.log(day);
+
     return (
         <div className="chart-container">
             <div>
