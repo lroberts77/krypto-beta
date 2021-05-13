@@ -17,10 +17,14 @@ const CoinData = ({ data }) => {
                 </div>
             </div>
             <div className="column">
-                <div>Total Volume</div>
-                <div>{data.total_volume}</div>
-                <div>24hr High</div>
-                <div>{data.high_24h}</div>
+                <div className="row">
+                    <div>Total Volume</div>
+                    <div>{data.total_volume}</div>
+                </div>
+                <div className="row"> 
+                    <div>24hr High</div>
+                    <div>{data.high_24h}</div>
+                </div>
             </div>
             <div className="column">
                 <div>24hr Low</div>
