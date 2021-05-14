@@ -17,8 +17,8 @@
 
 @media screen and (min-width: 1270px) {
     .MuiContainer-maxWidthLg {
-        display: flex;
-        flex-wrap: wrap;
+        display: flex !important;
+        flex-wrap: wrap !important;
     }
 }
 
