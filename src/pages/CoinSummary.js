@@ -23,6 +23,7 @@ const CoinSummary = () => {
       setCoins(res.data.slice(0, 32));
       }
       fetchData()
+      // console.log(coins);
       }, []);
   
       // fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
@@ -30,7 +31,7 @@ const CoinSummary = () => {
       //   res.json()
       //   .then(data => setCoins(data.slice(0, 32)))
   
-      console.log(coins);
+      // console.log(coins);
   
       // set the value of the search box to setsearch in turn search
       const handleChange = (e) => {

@@ -3,6 +3,8 @@ import "./CoinData.css"
 
 const CoinData = ({ data }) => {
   const renderData = () => {
+
+    console.log(data)
     if (data) {
       return (
         <div className="data-container">
@@ -40,8 +42,9 @@ const CoinData = ({ data }) => {
       );
     }
   };
-
+//   if (data) {
   return <div>{renderData()}</div>;
+//   }
 };
 
 export default CoinData;
