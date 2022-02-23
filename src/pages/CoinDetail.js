@@ -12,7 +12,7 @@ const CoinDetail = () => {
     const [isLoading, setIsLoading] = useState(false)
 
     const formatData = data => {
-        return data.map(el => {
+        return data?.map(el => {
             return {
                 x: el[0],
                 y: el[1].toFixed(2),
@@ -59,11 +59,11 @@ const CoinDetail = () => {
             ])
             console.log(day);
             setCoinData({
-                day: formatData(day.data.prices),
+                day: formatData(day?.data?.prices),
                 // daytime: formattime(day.data.prices),
                 // week: formatData(week.data.prices),
                 // year: formatData(year.data.prices),
-                detail: detail.data[0]
+                detail: detail?.data[0]
             })
             setIsLoading(false);
         };
