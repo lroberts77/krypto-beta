@@ -37,4 +37,10 @@
     padding: 0 !important;
     display: flex !important;
   }
+
+@media (min-width: 600px) {
+  .MuiContainer-root {
+    display: flex;
+  }
+}
 /* } */

@@ -3,5 +3,7 @@
         "javascript": "javascriptreact"
     },
     "emmet.showSuggestionsAsSnippets": true,
-    "emmet.extensionsPath": ""
+    "emmet.extensionsPath": [
+        ""
+    ]
 }
